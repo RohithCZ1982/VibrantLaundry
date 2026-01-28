@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact | Vibrant Laundry and Dry Cleaning</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-text">
+          <h1>Vibrant Laundry</h1>
+          <p class="tag">and Dry Cleaning</p>
+        </div>
+      </div>
+
+      <nav id="site-nav" class="nav">
+        <a href="index.html#hero">Home</a>
+        <a href="index.html#offers">Offers</a>
+        <a href="services.html#services">Services</a>
+        <a href="index.html#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <button id="cart-btn" class="cart-btn" aria-label="Open cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4H6z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3 6h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16 10a4 4 0 0 1-8 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span id="cart-count" class="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="contact" class="contact section container">
+      <h3 class="section-title">Contact</h3>
+      <p>Call or WhatsApp to schedule pickup — or send your selected services using the cart button.</p>
+      <div class="info-grid">
+        <div class="info-card">
+          <h4 class="info-title">Address</h4>
+          <ul class="info-list">
+            <li>Doctor's corner, 968, 9th Cross Rd</li>
+            <li>Gokulam 3rd Stage, Gokulam</li>
+            <li>Mysuru, Karnataka 570002</li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <h4 class="info-title">Contact Numbers</h4>
+          <ul class="info-list">
+            <li><strong>Phone:</strong> 073381 15444</li>
+            <li><strong>WhatsApp:</strong> <span id="contact-phone">Replace with business number</span></li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <h4 class="info-title">Business Hours</h4>
+          <ul class="info-list">
+            <li>Sunday 9:30 am–1:30 pm</li>
+            <li>Monday 8:30 am–8 pm</li>
+            <li>Tuesday 8:30 am–8 pm</li>
+            <li>Wednesday 8:30 am–8 pm</li>
+            <li>Thursday 8:30 am–8 pm</li>
+            <li>Friday 8:30 am–8 pm</li>
+            <li>Saturday 8:30 am–8 pm</li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <h4 class="info-title">Service Hours</h4>
+          <ul class="info-list">
+            <li><strong>Delivery:</strong> 9 am–5:30 pm</li>
+            <li><strong>Pick-up:</strong> 9 am–5 pm</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Cart Modal -->
+  <div id="cart-modal" class="cart-modal" aria-hidden="true" role="dialog" aria-labelledby="cart-title">
+    <div class="cart-panel">
+      <header class="cart-header">
+        <h4 id="cart-title">Your Selection</h4>
+        <button id="close-cart" class="close-btn" aria-label="Close cart">&times;</button>
+      </header>
+      <div id="cart-list" class="cart-list">
+        <p class="empty">No services added yet.</p>
+      </div>
+      <footer class="cart-footer">
+        <div class="cart-actions">
+          <button id="clear-cart" class="btn btn-outline">Clear</button>
+          <button id="send-whatsapp" class="btn btn-primary">Send to WhatsApp</button>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Vibrant Laundry</strong>
+        <div class="muted">Premium laundry & dry cleaning</div>
+      </div>
+      <div class="muted">© <span id="year"></span> Vibrant Laundry</div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
