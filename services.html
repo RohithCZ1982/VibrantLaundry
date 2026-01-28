@@ -4,7 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Services | Vibrant Laundry and Dry Cleaning</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -27,9 +29,12 @@
 
       <div class="header-actions">
         <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
-          <span></span>
-          <span></span>
-          <span></span>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="5" cy="6" r="2" fill="currentColor"/>
+            <circle cx="5" cy="12" r="2" fill="currentColor"/>
+            <circle cx="5" cy="18" r="2" fill="currentColor"/>
+            <path d="M11 6h8M11 12h8M11 18h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
         </button>
         <button id="cart-btn" class="cart-btn" aria-label="Open cart">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
