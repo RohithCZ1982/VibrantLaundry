@@ -32,6 +32,7 @@ const yearSpan = document.getElementById('year');
 const nav = document.querySelector('.nav');
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = Array.from(document.querySelectorAll('.nav a'));
+const floatingWasher = document.querySelector('.floating-washer');
 const navCloseOnOutside = (e) => {
   if (!nav || !menuToggle) return;
   if (!nav.classList.contains('open')) return;
@@ -242,6 +243,15 @@ if (menuToggle && nav) {
 
   document.addEventListener('click', navCloseOnOutside);
 }
+
+function updateFloatingWasher() {
+  if (!floatingWasher) return;
+  const shouldShow = window.scrollY > 120;
+  floatingWasher.classList.toggle('show', shouldShow);
+}
+
+updateFloatingWasher();
+window.addEventListener('scroll', updateFloatingWasher, { passive: true });
 
 /* highlight current section in nav */
 function updateActiveNav() {
